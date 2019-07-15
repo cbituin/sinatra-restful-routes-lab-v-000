@@ -1,3 +1,4 @@
+  <% puts params[:id]%>
   <% Recipe.all.select do |recipe| %>
   <% recipe.id == params[:id] %>
   
