@@ -4,11 +4,13 @@
     <form action="/recipes/<%=recipe.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="PATCH">
       
-      <label for="">
-        
-      </label>
-      <h2>Recipe Name: <%= recipe.name %></h2>
-      <p>Ingredients: <%= recipe.ingredients %></p>
+      <label for="name">Recipe Name: </label>
+      <input type="text" name="name" value="<%=recipe.name%>">
+      
+      <label for="ingredients">Ingredients: </label>
+      <input type="text" name="ingredients" value="<%= recipe.ingredients %>"
+      
+      
       <p>Cook time: <%= recipe.cook_time %> minutes</p>
       </form>
   <% end %>
